@@ -46,7 +46,7 @@ const csrftoken = getToken('csrftoken');
 	     	<a href="{% url 'cart' %}">
 	    		<img  id="cart-icon" src="{% static 'images/download.png' %}">
 	    	</a>
-	    	<p id="cart-total-red">0</p>
+	    	<p id="cart-total-red">{{cartItems}}</p>
       </div>
 </nav>
 <div class = "container">
